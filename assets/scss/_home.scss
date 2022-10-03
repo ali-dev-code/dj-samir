@@ -1,0 +1,394 @@
+/*--------------------------------------------------------------
+# about
+--------------------------------------------------------------*/
+
+.about {
+	padding: 80px 0px;
+	@media only screen and (max-width: 1199px) {
+		padding: 60px 0px;
+	}
+	@media only screen and (max-width: 767px) {
+		padding: 40px 0px;
+	}
+	.sec-t {
+		h2 {
+			font-size: 46px;
+			color: $title-color;
+			font-weight: 800;
+			margin-bottom: 35px;
+			@media only screen and (max-width: 1199px) {
+				font-size: 40px;
+			}
+			@media only screen and (max-width: 991px) {
+				font-size: 38px;
+				margin-bottom: 27px;
+			}
+			@media only screen and (max-width: 767px) {
+				margin-bottom: 22px;
+				font-size: 34px;
+			}
+		}
+	}
+	.abt-text {
+		p {
+			font-size: 18px;
+			&:not(:last-child) {
+				margin-bottom: 18px;
+				@media only screen and (max-width: 767px) {
+					margin-bottom: 14px;
+				}
+			}
+			@media only screen and (max-width: 767px) {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+# services
+--------------------------------------------------------------*/
+@keyframes wavepulse {
+	0%,
+	30% {
+		transform: scale(1, 1);
+	}
+
+	50% {
+		transform: scale(1.03, 1.03);
+	}
+
+	70%,
+	100% {
+		transform: scale(1, 1);
+	}
+}
+.services {
+	padding: 80px 0px;
+	@media only screen and (max-width: 1199px) {
+		padding: 60px 0px;
+	}
+	@media only screen and (max-width: 767px) {
+		padding: 40px 0px;
+	}
+	.sec-t {
+		text-align: center;
+		margin-bottom: 40px;
+		@media only screen and (max-width: 991px) {
+			margin-bottom: 30px;
+		}
+		h2 {
+			font-size: 46px;
+			color: $title-color;
+			font-weight: 800;
+			margin-bottom: 4px;
+			@media only screen and (max-width: 1199px) {
+				font-size: 40px;
+			}
+			@media only screen and (max-width: 991px) {
+				font-size: 38px;
+			}
+			@media only screen and (max-width: 767px) {
+				font-size: 34px;
+			}
+		}
+		p {
+			font-family: $font-title;
+			font-weight: 600;
+			color: $title-color;
+			font-size: 20px;
+			@media only screen and (max-width: 767px) {
+				font-size: 18px;
+			}
+		}
+	}
+
+	.ser-single {
+		display: flex;
+		margin-bottom: 40px;
+		@media only screen and (max-width: 991px) {
+			max-width: 350px;
+      display: block;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+		}
+		.ser-logo {
+			height: 50px;
+			object-fit: contain;
+			min-width: 50px;
+			margin-right: 12px;
+      @media only screen and (max-width: 991px) {
+       margin-right: 0;
+       margin-bottom: 8px;
+      }
+		}
+		h5 {
+			font-size: 16px;
+			font-weight: 700;
+			margin-bottom: 5px;
+      @media only screen and (max-width: 991px) {
+       margin-bottom: 8px;
+      }
+		}
+		p {
+			font-size: 15px;
+			font-weight: 300;
+			line-height: 1.5;
+			color: $title-color;
+      @media only screen and (max-width: 991px) {
+       font-weight: 400;
+      }
+		}
+	}
+
+	.img-center {
+		text-align: center;
+		position: relative;
+		.wave-img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.wave {
+			animation: wavepulse 0.5s ease infinite;
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+# logo-slider
+--------------------------------------------------------------*/
+.logo-slider {
+	text-align: center;
+  padding-top: 70px;
+  @media only screen and (max-width: 991px) {
+   padding-top: 50px;
+  }
+  @media only screen and (max-width: 767px) {
+   padding-top: 40px;
+  }
+	.swiper-slide {
+		img {
+			 height: 150px;
+       object-fit: contain;
+       @media only screen and (max-width: 767px) {
+        height: 110px;
+       }
+       @media only screen and (max-width: 482px) {
+        height: 90px;
+       }
+		}
+	}
+}
+
+
+/*--------------------------------------------------------------
+# reasons
+--------------------------------------------------------------*/
+.reasons{
+  background-image: url('../img/hero/testimonials_parallax.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 0px;
+  @media only screen and (max-width: 1199px) {
+		padding: 60px 0px;
+	}
+	@media only screen and (max-width: 767px) {
+		padding: 40px 0px;
+	}
+
+  .rsn-con{
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sec-t {
+		text-align: center;
+		margin-bottom: 40px;
+		@media only screen and (max-width: 991px) {
+			text-align: left;
+			margin-bottom: 30px;
+		}
+		h2 {
+			font-size: 46px;
+			color: #fff;
+			font-weight: 800;
+			margin-bottom: 4px;
+			@media only screen and (max-width: 1199px) {
+				font-size: 40px;
+			}
+			@media only screen and (max-width: 991px) {
+				font-size: 38px;
+			}
+			@media only screen and (max-width: 767px) {
+				font-size: 34px;
+			}
+		}
+		p {
+			font-family: $font-title;
+			color: #fff;
+			font-size: 16px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+		}
+	}
+  .nav-pills{
+    background-color: $primary-color;
+    height: 100%;
+    padding: 40px 25px 25px 25px;
+    @media only screen and (max-width: 1299px) {
+     padding: 15px 15px;
+    }
+    .nav-link{
+      &:not(:last-child) {
+      margin-bottom: 8px;
+      }
+     background-color: transparent;
+     border: 0;
+     outline: 0;
+     padding: 0;
+     text-align: start;
+     padding: 16px 25px;
+     font-family: $font-title;
+     font-size: 17px;
+     font-weight: 700;
+     color: #fff;
+     border-radius: 0;
+     transition: all .2s ease-in;
+     @media only screen and (max-width: 1299px) {
+      padding: 13px 23px;
+     }
+     &.active{
+      background-color: $bg-white;
+      color: $title-color;
+     }
+     &:hover{
+      color: $title-color;
+     }
+    }
+  }
+  .tab-content-txt{
+    padding: 40px 25px 25px 25px;
+    background-color: #fff;
+    height: 100%;
+    @media only screen and (max-width: 1299px) {
+      padding: 15px 15px;
+     }
+    h3{
+      font-size: 33px;
+      font-weight: 800;
+      margin-bottom: 18px;
+      @media only screen and (max-width: 1299px) {
+       font-size: 28px;
+       margin-bottom: 16px;
+      }
+      @media only screen and (max-width: 767px) {
+       font-size: 27px;
+      }
+    }
+    p{
+      font-size: 16px;
+      color: $title-color;
+      &:not(:last-child) {
+      margin-bottom: 16px;
+      @media only screen and (max-width: 767px) {
+       margin-bottom: 14px;
+      }
+      }
+    }
+  }
+}
+
+
+/*--------------------------------------------------------------
+# sound
+--------------------------------------------------------------*/
+.sound{
+  padding: 80px 0px;
+  position: relative;
+  @media only screen and (max-width: 1199px) {
+		padding: 60px 0px;
+	}
+	@media only screen and (max-width: 767px) {
+		padding: 40px 0px;
+	}
+  .sec-t {
+		text-align: center;
+		margin-bottom: 40px;
+		@media only screen and (max-width: 991px) {
+			margin-bottom: 30px;
+		}
+		h2 {
+			font-size: 46px;
+			color: $title-color;
+			font-weight: 800;
+			margin-bottom: 4px;
+			@media only screen and (max-width: 1199px) {
+				font-size: 40px;
+			}
+			@media only screen and (max-width: 991px) {
+				font-size: 38px;
+			}
+			@media only screen and (max-width: 767px) {
+				font-size: 34px;
+			}
+		}
+		p {
+			font-family: $font-title;
+      color: $title-color;
+			font-size: 16px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+		}
+	}
+
+
+  .sound-con{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .track-left{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    max-width: 353px;
+    z-index: -1;
+    @media only screen and (max-width: 1399px) {
+     max-width: 300px;
+    }
+    @media only screen and (max-width: 1199px) {
+      max-width: 250px;
+     }
+     @media only screen and (max-width: 767px) {
+      display: none;
+     }
+  }
+  .track-right{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    max-width: 353px;
+    z-index: -1;
+    @media only screen and (max-width: 1399px) {
+      max-width: 300px;
+     }
+     @media only screen and (max-width: 1199px) {
+      max-width: 250px;
+     }
+     @media only screen and (max-width: 767px) {
+      display: none;
+     }
+  }
+
+}

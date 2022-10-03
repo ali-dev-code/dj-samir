@@ -1,0 +1,117 @@
+/*--------------------------------------------------------------
+# hero-area
+--------------------------------------------------------------*/
+.hero-area{
+  background-image: url('../img/hero/hero-main-samir.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  @media only screen and (max-width: 991px) {
+   min-height: 100vh;
+   background-position: 65% 50%;
+  }
+  @media only screen and (max-width: 767px) {
+   min-height: 100vh;
+   background-attachment: scroll;
+   background-position: 75% 50%;
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($bg-black, 0.05);
+  }
+
+  .hero-inner{
+    position: relative;
+    svg{
+      height: 115px;
+      @media only screen and (max-width: 991px) {
+       height: 100px;
+      }
+      text{
+       color: #fff;
+        font-family: $font-title;
+        font-style: normal;
+        font-size: 122px;
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+        animation: dash 4.5s linear forwards, filling 4.5s ease-in forwards;
+        animation-iteration-count: infinite;
+        font-weight: 900;
+        @media only screen and (max-width: 991px) {
+         font-size: 90px;
+        }
+        @media only screen and (max-width: 482px) {
+          font-size: 80px;
+         }
+      }
+
+    }
+
+    h2{
+      font-size: 120px;
+      color: #fff;
+      font-weight: 900;
+      margin-bottom: 23px;
+      line-height: 1.1;
+      @media only screen and (max-width: 991px) {
+        font-size: 90px;
+        margin-bottom: 18px;
+       }
+       @media only screen and (max-width: 482px) {
+        font-size: 80px;
+       }
+    }
+    p{
+      font-family: $font-title;
+      font-size: 16px;
+      color: #CACACA;
+      margin-bottom: 44px;
+      @media only screen and (max-width: 991px) {
+       max-width: 400px;
+       margin-bottom: 30px;
+      }
+    }
+  }
+  .btn-main{
+    &:hover{
+      background-color: $bg-white;
+      color: $bg-nav-collapse;
+    }
+  }
+
+  .scroll-bottom{
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    img{
+      height: 50px;
+      transition: all .2s ease-in-out;
+      @media only screen and (max-width: 767px) {
+       height: 40px;
+      }
+      &:hover{
+        transform: translateY(-4px);
+      }
+    }
+  }
+
+
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
